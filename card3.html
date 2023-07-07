@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganna Landing Page</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assests/music/images/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="stylesmusic.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="assests/music/videos/music-video.mp4" type="video/mp4" />
+      </video>
+      <nav>
+        <img src="assests/music/images/logo.png"class="logo"alt="logo"title="logo"/>
+        <ul>
+          <li><a href="javascript:void(0)">Trending Songs</a></li>
+          <li><a href="javascript:void(0)">New Songs</a></li>
+          <li><a href="javascript:void(0)">Old Songs</a></li>
+          <li><a href="javascript:void(0)">My Music</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1>Click Here To Listen</h1>
+        <img src="assests/music/images/play.png" id="icon" alt="play" />
+      </div>
+    </div>
+
+    <audio id="mySong">
+      <source src="assests/music/audio/hey-mama.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+      var mySong = document.getElementById("mySong");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        if (mySong.paused) {
+          mySong.play();
+          icon.src = "assests/music/images/pause.png";
+        } else {
+          mySong.pause();
+          icon.src = "assests/music/images/play.png";
+        }
+      };
+    </script>
+  </body>
+</html>

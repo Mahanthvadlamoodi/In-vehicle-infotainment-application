@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("mainimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.content {
+  text-align: center;
+  padding: 3%;
+  color: #f0eeee;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 250px;
+}
+
+.card {
+  width: 300px;
+  height: 6cm;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 20px 20px 10px rgba(97, 2, 2,0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.25);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 10px 10px 10px rgb(3, 59, 53);
+}
+
+.card:nth-child(1) {
+  background-image: url("mainimages/image1.jpg");
+  width: 110;
+  height: 7cm;
+  border-radius: 50%;
+}
+
+.card:nth-child(2) {
+  background-image: url("mainimages/image2.jpg");
+  width: 110;
+  height: 6.5cm;;
+  border-radius: 20%;
+}
+
+.card:nth-child(3) {
+  background-image: url("mainimages/image3.jpg");
+}
+
+.cardgame {
+  width: 250px;
+  height: 6cm;
+  background-color: #000000;
+  margin-top: 70px;
+  margin-right: 1px;
+  padding: 20px;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 10px rgba(97, 2, 2,0.4);
+  transition: transform 0.3s ease-in-out;
+  background-image: url("mainimages/image4.jpg");
+}
+
+.cardgame:hover {
+  
+  transform: scale(1.15);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 10px 10px 10px rgb(3, 59, 53);
+}
+
